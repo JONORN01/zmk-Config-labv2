@@ -109,6 +109,16 @@
             key-positions = <6 16>;
             bindings = <&kp RIGHT_PARENTHESIS>;
         };
+
+        Volume_up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <2 3>;
+        };
+
+        Volume_Down {
+            bindings = <&kp C_VOL_DN>;
+            key-positions = <22 23>;
+        };
     };
 
     keymap {
