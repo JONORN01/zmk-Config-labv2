@@ -63,30 +63,40 @@
             tapping-term-ms = <150>;
         };
 
-        Td_a: Td_a {
+        Td_O: Td_O {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_A";
+            label = "TD_O";
             #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp A>;
+            bindings = <&kp O>, <&o>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
+        };
+
+        Td_u: Td_u {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_U";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&Td_u>;
+
+            tapping-term-ms = <250>;
         };
 
         Td_i: Td_i {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_I";
             #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp I>;
+            bindings = <&kp I>, <&i>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
         };
 
-        Td_o: Td_o {
+        Td_e: Td_e {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_O";
+            label = "TD_E";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp O>;
+            bindings = <&kp E>, <&e>;
+
+            tapping-term-ms = <250>;
         };
     };
 
@@ -170,6 +180,34 @@
             bindings = <&kp SEMICOLON>;
             label = "AE";
         };
+
+        o: o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp O>;
+            label = "O";
+        };
+
+        i: i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp I>;
+            label = "I";
+        };
+
+        e: e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp E>;
+            label = "E";
+        };
+
+        u: u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp U>;
+            label = "U";
+        };
     };
 
     keymap {
@@ -185,7 +223,7 @@
             // COLEMAK default
 
             bindings = <
-&kp Q        &kp W       &kp E       &kp R         &kp T                                                &kp Y      &kp U         &Td_i       &Td_o       &Td_d
+&kp Q        &kp W       &Td_e       &kp R         &kp T                                                &kp Y      &Td_u         &Td_i       &Td_O       &Td_d
 &hm LCTRL A  &hm LALT S  &hm LGUI D  &hms LSHFT F  &kp G                                                &kp H      &hms RSHFT J  &hm RGUI K  &hm RALT L  &hm RCTRL SEMICOLON
 &kp Z        &kp X       &kp C       &kp V         &kp B          &kp C_PLAY_PAUSE    &kp C_PLAY_PAUSE  &kp N      &kp M         &kp COMMA   &kp DOT     &kp SLASH
                                      &lt 1 TAB     &kp BACKSPACE  &kp BSPC            &kp SPACE         &kp SPACE  &kp RETURN
