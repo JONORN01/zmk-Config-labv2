@@ -60,7 +60,7 @@
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp LEFT_BRACKET>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
         };
 
         Td_O: Td_O {
@@ -69,7 +69,7 @@
             #binding-cells = <0>;
             bindings = <&kp O>, <&o>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
         };
 
         Td_i: Td_i {
@@ -78,7 +78,7 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&i>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
         };
 
         Td_e: Td_e {
@@ -87,7 +87,7 @@
             #binding-cells = <0>;
             bindings = <&kp E>, <&e>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
         };
 
         Td_u: Td_u {
@@ -96,7 +96,7 @@
             #binding-cells = <0>;
             bindings = <&kp U>, <&u>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
         };
 
         Td_y: Td_y {
@@ -105,7 +105,7 @@
             #binding-cells = <0>;
             bindings = <&kp Y>, <&u>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
         };
     };
 
