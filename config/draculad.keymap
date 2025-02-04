@@ -113,6 +113,8 @@
             label = "TD_A";
             #binding-cells = <0>;
             bindings = <&hm LEFT_CONTROL A>, <&a>;
+
+            tapping-term-ms = <300>;
         };
     };
 
