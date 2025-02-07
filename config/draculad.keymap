@@ -20,9 +20,7 @@
 
 #define DEFAULT 0
 #define NAV 1
-#define Mouse 2
-#define SYM 3
-#define ADJUST 4
+#define MOUSE 2
 
 / {
     behaviors {
