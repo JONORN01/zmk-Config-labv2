@@ -24,8 +24,6 @@
 #define NAV 1
 #define MOUSE 2
 
-&studio_unlock
-
 / {
     behaviors {
         hm: homerow_mods {
