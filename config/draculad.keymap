@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+/*
 #undef ZMK_BEHAVIORS_KEEP_ALL   //ZMK STUDIO
 
 #define ZMK_BEHAVIORS_KEEP_SK   //ZMK Studio
@@ -24,7 +24,7 @@
 #define NAV 1
 #define MOUSE 2
 
-/ {
+ {
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
