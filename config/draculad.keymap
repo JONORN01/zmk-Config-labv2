@@ -3,13 +3,13 @@
  *
  * SPDX-License-Identifier: MIT
  */
-/*
+
+
 #undef ZMK_BEHAVIORS_KEEP_ALL   //ZMK STUDIO
 
 #define ZMK_BEHAVIORS_KEEP_SK   //ZMK Studio
 #define ZMK_BEHAVIORS_KEEP_MT   //ZMK Studio
 #define ZMK_BEHAVIORS_KEEP_KT   //ZMK Studio
-*/
 
 
 #include <behaviors.dtsi>
@@ -18,11 +18,12 @@
 #include <dt-bindings/zmk/pointing.h>
 
 
-// Layers
 
+// Layers
 #define DEFAULT 0
 #define NAV 1
 #define MOUSE 2
+
 
 / {
     behaviors {
@@ -276,7 +277,7 @@
 &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans                            &trans  &trans        &trans        &trans        &trans
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                    &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
 &trans  &trans          &trans          &trans           &msc SCRL_UP    &trans    &trans  &trans  &trans        &trans        &trans        &trans
-                                        &trans           &trans          &trans    &trans  &trans  &trans
+                                        &studio_unlock           &trans          &trans    &trans  &trans  &trans
             >;
         };
     };
